@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: 'Jost';
+}
+.cardEvento{
+    box-shadow: 0 0 8px #0d24ec;
+    margin: 4vh auto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    min-width: 250px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.cardEvento:hover {
+    transform: translateY(-10px);
+}
+
+.cardEvento img{
+    border-radius: 50%;
+    height: 4rem;
+    width: 4rem;
+    box-shadow: 0 0 10px #0d24ec;
+    margin: 20px auto;
+}
+
+ion-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Opcional, solo si hay texto que necesita ser centrado */
+    padding: 0; /* Remueve cualquier padding adicional */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+}
+
+@media (min-width: 768px) {
+    .cardEvento {
+        width: 45%;
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cardEvento {
+        width: 30%;
+    }
+}
